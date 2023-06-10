@@ -88,5 +88,6 @@
         position: fixed;
         width: 100vw;
         z-index: 6;
+        justify-content: center;
     }
 }
