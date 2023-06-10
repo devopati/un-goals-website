@@ -42,6 +42,7 @@
 }
 #socials{
     cursor: pointer;
+    font-size: 1.4rem;
 }
 #socials:hover{
     color: var(--color-orange);
