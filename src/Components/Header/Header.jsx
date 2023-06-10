@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
 import {
@@ -13,8 +13,26 @@ import { VscChromeClose } from "react-icons/vsc";
 import logo from "../../assets/images/un-logo.png";
 const Header = ({ configHead }) => {
   const [menuActive, setMenuActive] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const headerHeight = window.innerHeight * 0.4;
+
+      if (scrollPosition > headerHeight) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="header-container">
+    <div className={`header-container `}>
       <div className="header-top-socials">
         <FaFacebookF id="socials" />
         <FaTwitter id="socials" />
@@ -22,7 +40,11 @@ const Header = ({ configHead }) => {
         <FaLinkedin id="socials" />
         <FaYoutube id="socials" />
       </div>
-      <div className={`header-menu-container ${configHead}`}>
+      <div
+        className={`header-menu-container ${configHead} ${
+          isScrolled && "header-scrolled"
+        }`}
+      >
         <div className="header-logo">
           <img src={logo} alt="" />
         </div>

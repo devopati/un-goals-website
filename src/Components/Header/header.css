@@ -1,4 +1,6 @@
-
+.header-container{
+    z-index: 9;
+}
 
 .header-menu-container{
     display: flex;
@@ -7,6 +9,13 @@
     padding: .9rem 3rem;
     background: var(--color-black-variant);
     height: 5rem;
+}
+.header-scrolled{
+    background: var(--color-black-variant);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* z-index: 5; */
 }
 .header-logo img{
     height: 3rem;
@@ -59,6 +68,11 @@
 }
 
 @media screen and (max-width:768px) {
+    .header-container{
+        position: fixed;
+        top :0;
+        width: 100%;
+    }
     .small-menu{
         display: block;
     }
@@ -81,6 +95,7 @@
         top: 4vh;
     }
     .header-menu-container{
+        position: sticky;
         padding: .7rem;
         padding-top: 5.5rem;
     }

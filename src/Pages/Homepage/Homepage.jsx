@@ -3,6 +3,7 @@ import Slider from "../../Components/Slider/Slider";
 import Header from "../../Components/Header/Header";
 import "./homepage.css";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+// import "bootstrap-icons";
 
 const Homepage = () => {
   return (
@@ -99,7 +100,84 @@ const Homepage = () => {
             We offer comprehensive recycling, industry-specific waste
             management, quality control & sustainability solutions for
             businesses and corporations.
+            <span className="sow-icon-environmental"></span>
           </h3>
+        </div>
+      </div>
+      <div className="homepage-mid-bottom">
+        <div className="mid-bottom-hang">
+          <h2>request free quote</h2>
+        </div>
+        <div className="midbottom-head">
+          <h1>latest articles</h1>
+          <h3>
+            Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
+            velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+            auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+          </h3>
+          <div className="mid-bootom-cards">
+            <div className="midbottom-card">
+              <div className="mid-top">
+                <h4>
+                  august 15, 2012 | <span>recycling</span>
+                </h4>
+              </div>
+              <h2>how to recycle paper</h2>
+              <div className="mid-paragraph">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh
+                  vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                  bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                  nibh id elit.
+                </p>
+              </div>
+              <button className="middle-btn mid-bottom-btn">
+                Learn More <BsFillArrowRightCircleFill id="btn-icon" />
+              </button>
+            </div>
+            <div className="midbottom-card">
+              <div className="mid-top">
+                <h4>
+                  january 26, 2022 | <span>recycling</span>
+                </h4>
+              </div>
+              <h2>green business solutions</h2>
+              <div className="mid-paragraph">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh
+                  vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                  bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                  nibh id elit.
+                </p>
+              </div>
+              <button className="middle-btn mid-bottom-btn">
+                Learn More <BsFillArrowRightCircleFill id="btn-icon" />
+              </button>
+            </div>
+            <div className="midbottom-card">
+              <div className="mid-top">
+                <h4>
+                  december 13, 2016 | <span>recycling</span>
+                </h4>
+              </div>
+              <h2>waste management tips</h2>
+              <div className="mid-paragraph">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh
+                  vel velit auctor aliquet. Aenean sollicitudin, lorem quis
+                  bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                  nibh id elit. bibendum auctor, nisi elit consequat ipsum, nec
+                  sagittis sem nibh id elit. nibh id elit. bibendum auctor, nisi
+                  elit consequat ipsum, nec sagittis sem nibh id elit. sagittis
+                  sem nibh id elit. nibh id elit. bibendum auctor, nisi elit
+                  consequat ipsum, nec sagittis sem nibh id elit.
+                </p>
+              </div>
+              <button className="middle-btn mid-bottom-btn">
+                Learn More <BsFillArrowRightCircleFill id="btn-icon" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
