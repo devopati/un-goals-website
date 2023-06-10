@@ -54,6 +54,14 @@ const Homepage = () => {
         </div>
       </div>
       <div className="homepage-middle">
+        <div className="home-middle-card small-middle">
+          <div className="homemid-image">
+            {/* <img
+                src=
+                alt=""
+              /> */}
+          </div>
+        </div>
         <div className="home-middle-cards">
           <div className="home-middle-card">
             <small className="round-head">What we do</small>

@@ -58,7 +58,7 @@
     padding-top: .8rem;
 }
 
-@media screen and (max-width:764px) {
+@media screen and (max-width:768px) {
     .small-menu{
         display: block;
     }
