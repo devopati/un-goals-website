@@ -33,7 +33,7 @@
 .header-top-socials{
     display: flex;
     justify-content: flex-end;
-    padding: .6rem 3rem;
+    padding: 1rem 3rem;
     gap: 3rem;
     background: var(--color-black-variant);
     color: var(--color-white);
@@ -50,7 +50,7 @@
 }
 .small-menu{
     color: var(--color-white);
-    font-size: 1.7rem;
+    font-size: 2rem;
     display: none;
 }
 .menu-items-head {
@@ -81,7 +81,7 @@
     }
     .header-menu-container{
         padding: .7rem;
-        padding-top: 4rem;
+        padding-top: 5.5rem;
     }
     .header-top-socials{
         position: fixed;
