@@ -1,0 +1,19 @@
+.main-btn-component{
+    padding: .5rem;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    color: var(--color-orange);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: .4rem;
+}
+@media screen and (max-width:764px) {
+    .main-btn-component{
+        width: 180px;
+    }
+}
