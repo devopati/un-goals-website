@@ -90,6 +90,18 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+      <div className="homepage-mid-section">
+        <div className="midsection-header">
+          <h1>
+            buy & <span>sell</span> gabbbage
+          </h1>
+          <h3>
+            We offer comprehensive recycling, industry-specific waste
+            management, quality control & sustainability solutions for
+            businesses and corporations.
+          </h3>
+        </div>
+      </div>
     </div>
   );
 };

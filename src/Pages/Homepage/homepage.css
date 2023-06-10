@@ -146,7 +146,26 @@
     border-top-left-radius: 10rem;
     border-bottom-right-radius: 10rem;
   }
- 
+  .homepage-mid-section{
+    padding: 1rem 3.7rem;
+    background: url("../../assets/images/bigbg.svg");
+    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 1.4rem 0;
+  }
+ .midsection-header h1{
+    text-transform: uppercase;
+    padding: 1.3rem 0;
+    color: var(--color-black-variant);
+ }
+ .midsection-header span{
+    color: var(--color-green-variant);
+ }
+ .midsection-header h3{
+    font-style: italic;
+    color: var(--color-grey);
+    font-size:medium;
+    font-weight: normal;
+ }
 
   @media screen and (max-width:1024px) {
     .sub-hero-cards{
@@ -192,4 +211,11 @@
         display: block;
         height: 40vh;
      }
+     .homepage-mid-section{
+        padding: .3rem;
+        background: url("../../assets/images/smallbg.svg");
+      }
+      .midsection-header h1,.midsection-header h3{
+        padding: 1.3rem;
+      }
   }
