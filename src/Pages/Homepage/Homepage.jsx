@@ -11,6 +11,12 @@ import { AiFillStar, AiTwotonePhone } from "react-icons/ai";
 import { TfiEmail } from "react-icons/tfi";
 // import "bootstrap-icons";
 import recycle from "../../assets/images/recycle.jpg";
+import icon1 from "../../assets/images/icon1.png";
+import icon2 from "../../assets/images/icon2.png";
+import icon3 from "../../assets/images/icon3.png";
+import icon4 from "../../assets/images/icon4.png";
+import icon5 from "../../assets/images/icon5.png";
+import icon6 from "../../assets/images/icon6.png";
 import { HiUser } from "react-icons/hi";
 
 const Homepage = () => {
@@ -334,6 +340,28 @@ const Homepage = () => {
               Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
               Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
             </p>
+          </div>
+        </div>
+      </div>
+      <div className="homepage-international-icons">
+        <div className="international-icons-cards">
+          <div className="international-icons-card">
+            <img src={icon1} alt="" />
+          </div>
+          <div className="international-icons-card">
+            <img src={icon2} alt="" />
+          </div>
+          <div className="international-icons-card">
+            <img src={icon3} alt="" />
+          </div>
+          <div className="international-icons-card">
+            <img src={icon4} alt="" />
+          </div>
+          <div className="international-icons-card">
+            <img src={icon5} alt="" />
+          </div>
+          <div className="international-icons-card">
+            <img src={icon6} alt="" />
           </div>
         </div>
       </div>

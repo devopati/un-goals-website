@@ -502,6 +502,31 @@
     font-weight: 200;
     line-height: 1.3rem;
 }
+.homepage-international-icons{
+    background: var(--color-green-variant);
+    padding: 0 3rem;
+}
+.international-icons-cards{
+    display: flex;
+}
+.international-icons-card img{
+    width: 100%;
+    padding:0 .3rem;
+    cursor: pointer;
+}
+.international-icons-card img:hover{
+    transform: scale(1.1);
+    transition: all  0.3s ease-in-out;
+}
+.international-icons-card{
+    width: calc(100%/6);
+    border-right: 1px solid var(--color-black-variant);
+    height: max-content;
+    overflow: hidden;
+}
+.international-icons-card:last-child{
+    border-right: none;
+}
 
 
   @media screen and (max-width:1024px) {
@@ -610,6 +635,9 @@
      .contact-textarea textarea{
         padding: auto;
         /* cols:10; */
+     }
+     .homepage-international-icons{
+        padding: .3rem;
      }
   }
   /* *{
