@@ -510,6 +510,7 @@
 }
 .international-icons-cards{
     display: flex;
+    flex-wrap: wrap;
 }
 .international-icons-card img{
     width: 100%;
@@ -652,6 +653,11 @@
      }
      .homepage-international-icons{
         padding: .3rem;
+     }
+     .international-icons-card{
+        width: calc(100%/3);
+        border-bottom: 1px solid var(--color-green);
+        border-right: 1px solid var(--color-green);
      }
   }
   /* *{
