@@ -462,6 +462,7 @@
     color: var(--color-green-variant);
     font-weight: 300;
     padding: 1rem;
+    text-transform: capitalize;
 }
 .homepage-contacts-card form h1 span{
     color: var(--color-black-variant);
@@ -473,6 +474,7 @@
 .contacts-card2 h1{
     font-weight: 300;
     color: var(--color-green-variant);
+    text-transform: capitalize;
 }
 .contacts-card2 span{
     color: var(--color-black-variant);
@@ -527,6 +529,18 @@
 .international-icons-card:last-child{
     border-right: none;
 }
+.contact-btn{
+    background: var(--color-green-variant);
+    border: none;
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    font-size: 16px;
+    text-transform: capitalize;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
 
 
   @media screen and (max-width:1024px) {

@@ -18,6 +18,7 @@ import icon4 from "../../assets/images/icon4.png";
 import icon5 from "../../assets/images/icon5.png";
 import icon6 from "../../assets/images/icon6.png";
 import { HiUser } from "react-icons/hi";
+import Footer from "../../Components/Footer/Footer";
 
 const Homepage = () => {
   return (
@@ -279,7 +280,7 @@ const Homepage = () => {
               </div>
               <div className="contact-input">
                 <div>
-                  <input type="text" placeholder="Your Email" />
+                  <input type="text" placeholder="Your E-mail" />
                   <div className="input-icon">
                     <TfiEmail />
                   </div>
@@ -299,6 +300,9 @@ const Homepage = () => {
                   rows="10"
                   placeholder="How can we help?"
                 ></textarea>
+              </div>
+              <div>
+                <button className="contact-btn">send</button>
               </div>
             </form>
           </div>
@@ -364,6 +368,9 @@ const Homepage = () => {
             <img src={icon6} alt="" />
           </div>
         </div>
+      </div>
+      <div className="homepage-footer">
+        <Footer />
       </div>
     </div>
   );
