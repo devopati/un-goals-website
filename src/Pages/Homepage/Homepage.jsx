@@ -2,8 +2,16 @@ import React from "react";
 import Slider from "../../Components/Slider/Slider";
 import Header from "../../Components/Header/Header";
 import "./homepage.css";
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import {
+  BsFillArrowLeftSquareFill,
+  BsFillArrowRightCircleFill,
+  BsFillArrowRightSquareFill,
+} from "react-icons/bs";
+import { AiFillStar, AiTwotonePhone } from "react-icons/ai";
+import { TfiEmail } from "react-icons/tfi";
 // import "bootstrap-icons";
+import recycle from "../../assets/images/recycle.jpg";
+import { HiUser } from "react-icons/hi";
 
 const Homepage = () => {
   return (
@@ -177,6 +185,155 @@ const Homepage = () => {
                 Learn More <BsFillArrowRightCircleFill id="btn-icon" />
               </button>
             </div>
+          </div>
+          <div className="mid-bottom-nav-btns">
+            <BsFillArrowLeftSquareFill id="nav-btn" />
+            <BsFillArrowRightSquareFill id="nav-btn" />
+          </div>
+        </div>
+      </div>
+      <div className="homepage-circular-pattern">
+        <h1>
+          circular <span>economy</span>
+        </h1>
+        <h3>
+          Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel velit
+          auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+          elit consequat ipsum, nec sagittis sem nibh id elit.
+        </h3>
+        <div className="circular-pattern-btns">
+          <button>reduce</button>
+          <button>reuse</button>
+          <button>recycle</button>
+        </div>
+        <div className="circular-pattern-cards">
+          <div className="circular-pattern-card">
+            <div className="circular-pattern-card-image">
+              <img src={recycle} alt="" />
+            </div>
+          </div>
+          <div className="circular-pattern-card cp-2">
+            <h2>Reducing waste</h2>
+            <h3>
+              Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
+              velit auctor aliquet.
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
+              velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+              auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+            </p>
+            <button className="middle-btn mid-bottom-btn">
+              Learn More <BsFillArrowRightCircleFill id="btn-icon" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="homepage-waste-counter">
+        <div className="overlay"></div>
+        <div className="waste-counter-cards">
+          <div className="waste-counter-card">
+            <h1>4570</h1>
+            <small>gabbage bought</small>
+          </div>
+          <div className="waste-counter-card">
+            <h1>1070</h1>
+            <small>gabbage sold</small>
+          </div>
+          <div className="waste-counter-card">
+            <h1>4200</h1>
+            <small>tons of waste recycled </small>
+          </div>
+          <div className="waste-counter-card">
+            <h1>2590</h1>
+            <small>tress saved yearly</small>
+          </div>
+        </div>
+      </div>
+      <div className="homepage-contacts">
+        <div className="homepage-contacts-cards">
+          <div className="homepage-contacts-card">
+            <form>
+              <h1>
+                contact <span>us!</span>
+              </h1>
+              <div className="contact-input">
+                <div>
+                  <input type="text" placeholder="Your Full Name" />
+                  <div className="input-icon">
+                    <HiUser />
+                  </div>
+                </div>
+                <div>
+                  <input type="text" placeholder="Company" />
+                  <div className="input-icon">
+                    <AiFillStar />
+                  </div>
+                </div>
+              </div>
+              <div className="contact-input">
+                <div>
+                  <input type="text" placeholder="Your Email" />
+                  <div className="input-icon">
+                    <TfiEmail />
+                  </div>
+                </div>
+                <div>
+                  <input type="text" placeholder="Phone Number" />
+                  <div className="input-icon">
+                    <AiTwotonePhone />
+                  </div>
+                </div>
+              </div>
+              <div className="contact-textarea">
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="How can we help?"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div className="homepage-contacts-card contacts-card2">
+            <h1>
+              Users' <span>testimonials</span>
+            </h1>
+            <div className="client-avatar">
+              <img
+                src="https://recycle.orionthemes.com/demo-1/wp-content/uploads/2016/12/teammember3-150x150.jpg"
+                alt=""
+              />
+              <div>
+                <small>Andrew London</small>
+                <small>ScrapCorp International</small>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
+              velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+              auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+              Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+            </p>
+            <div className="client-avatar">
+              <img
+                src="https://recycle.orionthemes.com/demo-1/wp-content/uploads/2016/11/teammember5-150x150.jpg"
+                alt=""
+              />
+              <div>
+                <small>Robert Jones</small>
+                <small>Metal, Glass & Co.</small>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
+              velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
+              auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+              Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+            </p>
           </div>
         </div>
       </div>

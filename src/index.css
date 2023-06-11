@@ -16,6 +16,7 @@ body{
   --color-orange:#f2ac20;
   --color-blue:#4265d6;
   --color-grey:#808080;
+  --color-grey-variant:#f1f1f1;
 }
 li{
   list-style: none;
