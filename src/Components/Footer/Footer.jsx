@@ -32,10 +32,10 @@ const Footer = () => {
             <div className="footer-menu-card footer-about">
               <h2>about</h2>
               <p>
-                Recycle WordPress Theme was designed to promote environmental
-                quality, recycling and corporate sustainability. It is suitable
-                for any green business, waste management company,
-                environmental-friendly industry, organization or project.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                massa ligula, aliquet euismod eleifend vitae, interdum ut mi.
+                Praesent fringilla pharetra sapien sit amet semper. Nunc id
+                massa ut mi tempus mattis ac eu lectus. or project.
               </p>
               <button>about</button>
             </div>
