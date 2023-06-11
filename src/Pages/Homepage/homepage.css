@@ -609,7 +609,7 @@
      }
      .contact-textarea textarea{
         padding: auto;
-        cols:10;
+        /* cols:10; */
      }
   }
   /* *{
