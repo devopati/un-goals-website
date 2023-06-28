@@ -55,16 +55,17 @@ const Header = ({ configHead }) => {
           >
             <VscChromeClose />
           </div>
-          <Link>
+          <Link to="/" onClick={() => setMenuActive(false)}>
             <li>home</li>
           </Link>
-          <Link>
+          <Link to="market" onClick={() => setMenuActive(false)}>
+            <li>market</li>
+          </Link>
+          <Link to="/blog" onClick={() => setMenuActive(false)}>
             <li>blog</li>
           </Link>
-          <Link>
-            <li>map</li>
-          </Link>
-          <Link>
+
+          <Link to="about" onClick={() => setMenuActive(false)}>
             <li>about</li>
           </Link>
         </div>

@@ -8,7 +8,7 @@
     justify-content: space-between;
     padding: .9rem 3rem;
     background: var(--color-black-variant);
-    height: 5rem;
+    height: max-content;
 }
 .header-scrolled{
     background: var(--color-black-variant);
@@ -97,7 +97,7 @@
     .header-menu-container{
         position: sticky;
         padding: .7rem;
-        padding-top: 5.5rem;
+        padding-top: 3.5rem;
     }
     .header-top-socials{
         position: fixed;
