@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../Components/Header/Header";
 import { MdShare } from "react-icons/md";
 import { RiMessage2Fill } from "react-icons/ri";
