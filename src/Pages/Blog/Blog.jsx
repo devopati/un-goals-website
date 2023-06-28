@@ -15,10 +15,10 @@ const Blog = () => {
         <div className="blog-header">
           <h1>GREEN WASTE MANAGMENT BLOG POSTS</h1>
         </div>
-        <div className="blog-posts">
-          {BlogData.map((data) => {
-            return (
-              <div className="blog-post-card" key={data.id}>
+        {BlogData.map((data) => {
+          return (
+            <div className="blog-posts" key={data.id}>
+              <div className="blog-post-card">
                 <div className="blog-body-top">
                   <Link to={`/blog/${data.id}`}>
                     <h1>{data.heading}</h1>
@@ -43,9 +43,9 @@ const Blog = () => {
                   </div>
                 </div>
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
       </div>
       <Footer />
     </div>
