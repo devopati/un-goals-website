@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../Components/Header/Header";
 import { useParams } from "react-router";
 import { BlogData } from "../../Data/BlogData";
@@ -21,6 +21,9 @@ const FullBlog = () => {
   const popularBlogs2 = shuffledBlogs();
   //   console.log(popularBlogs);
   //   console.log(Math.floor(Math.random() * newBlogData.length));
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <div>

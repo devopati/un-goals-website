@@ -8,6 +8,9 @@ import { Link } from "react-router-dom";
 import Footer from "../../Components/Footer/Footer";
 
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="blog-container">
       <Header />
