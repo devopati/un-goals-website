@@ -30,7 +30,9 @@ const FullBlog = () => {
       <Header />
       <div className="full-blog-container blog-body">
         <div className="full-blog-header">
-          <BiLeftArrowAlt id="fblog-icon" />
+          <Link to="/blog">
+            <BiLeftArrowAlt id="fblog-icon" />
+          </Link>
           <h1>GREEN WASTE MANAGEMENT</h1>
           <BiSearch id="fblog-icon" />
         </div>
@@ -123,38 +125,6 @@ const FullBlog = () => {
               </div>
             </div>
           )}
-
-          {/* {popularBlogs2.map((data) => {
-            return (
-              <div className="blog-post-card" key={data.id}>
-                <div className="blog-body-top">
-                  <Link to={`/blog/${data.id}`}>
-                    <h1>{data.heading}</h1>
-                  </Link>
-                  <MdShare id="share-icon" />
-                </div>
-                <small style={{ color: "green", fontStyle: "italic" }}>
-                  {data.date}
-                </small>
-                <div className="blog-card-body">
-                  <div className="blog-p full-blog-pr">
-                    <p>{data.blogText}</p>
-                  </div>
-                  <div className="blog-card-bottom">
-                    <div style={{ visibility: "hidden" }}>
-                      <RiMessage2Fill size={30} color="grey" />{" "}
-                      <span>Post a Comment</span>
-                    </div>
-                    <Link to={`/blog/${data.id}`}>
-                      <div>
-                        <span>READ MORE</span>
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            );
-          })} */}
         </div>
       </div>
       <Footer />
