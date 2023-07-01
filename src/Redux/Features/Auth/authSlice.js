@@ -23,6 +23,11 @@ const authSlice = createSlice({
       localStorage.setItem("name", JSON.stringify(action.payload));
       state.name = action.payload;
     },
+    //
+    REMOVE_NAME(state, action) {
+      localStorage.setItem("name", JSON.stringify(action.payload));
+      state.name = action.payload;
+    },
     SET_USER(state, action) {
       const profile = action.payload;
       state.user.name = profile.name;
@@ -32,7 +37,7 @@ const authSlice = createSlice({
   },
 });
 
-export const { SET_LOGIN, SET_NAME, SET_USER } = authSlice.actions;
+export const { SET_LOGIN, SET_NAME, SET_USER, REMOVE_NAME } = authSlice.actions;
 
 export const selectIsloggedIn = (state) => state.auth.isLoggedIn;
 export const selectName = (state) => state.auth.name;

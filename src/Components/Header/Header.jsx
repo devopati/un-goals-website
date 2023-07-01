@@ -13,8 +13,10 @@ import { VscChromeClose } from "react-icons/vsc";
 import logo from "../../assets/images/un-logo.png";
 import { useDispatch, useSelector } from "react-redux";
 import {
+  REMOVE_NAME,
   SET_LOGIN,
   selectIsloggedIn,
+  selectName,
 } from "../../Redux/Features/Auth/authSlice";
 import { toast } from "react-toastify";
 const Header = ({ configHead }) => {
@@ -40,13 +42,15 @@ const Header = ({ configHead }) => {
     };
   }, []);
 
-  const logoutUser = () => {
+  const logoutUser = async () => {
     setMenuActive(false);
     dispatch(SET_LOGIN(false));
+    await dispatch(REMOVE_NAME(""));
     toast.success("Logout Successfull");
   };
 
   const isLoagedIn = useSelector(selectIsloggedIn);
+  const name = useSelector(selectName);
   return (
     <div className={`header-container `}>
       <div className="header-top-socials">
@@ -85,7 +89,7 @@ const Header = ({ configHead }) => {
             <li>about</li>
           </Link>
 
-          {isLoagedIn ? (
+          {isLoagedIn || name ? (
             <Link onClick={logoutUser}>
               <li onClick={() => setMenuActive(false)}>Logout</li>
             </Link>
