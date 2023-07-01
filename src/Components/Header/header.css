@@ -67,6 +67,31 @@
 .menu-items-head {
     padding-top: .8rem;
 }
+.header-menu-items button{
+    padding: 7px 8px;
+    font-weight: 600;
+    color: var(--color-white);
+    background: var(--color-blue);
+    border: 2px solid transparent;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.header-menu-items button:hover{
+    border: 2px solid var(--color-blue);
+    background: transparent;
+}
+#reg-btn{
+    background: var(--color-green);
+    color: var(--color-black-variant);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#reg-btn:hover{
+    border: 2px solid var(--color-green);
+    color: var(--color-white);
+    background: transparent;
+}
 
 @media screen and (max-width:768px) {
     .header-container{
@@ -89,8 +114,9 @@
         height: max-content;
         border-bottom: 2px solid var(--color-white);
         padding: 2rem 0;
-        top: -600px;
+        top: -700px;
         transition: .5s ease;
+        /* gap: 1.8rem; */
     }
     .menu-active{
         top: 4vh;

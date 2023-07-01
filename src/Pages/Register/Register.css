@@ -1,0 +1,148 @@
+.register-container{
+    display: flex;
+}
+.log-in-container{
+    height: 100vh;
+}
+
+.reg-side{
+    width: 100%;
+    background: var(--color-green);
+    /* padding: 2rem 0; */
+    position: relative;
+}
+.reg-top{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 20px;
+}
+.reg-back-icon{
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    transform: translate(-4%,-4%);
+    color: var(--color-black);
+    font-size: 40px;
+    cursor: pointer;
+}
+.reg-back-icon a{
+    color: var(--color-black);
+}
+.reg-side img{
+    width: 100%;
+    height: 100%;
+}
+.reg-form-container{
+    width: 100%;
+    background: var(--color-green);
+}
+.reg-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 3rem;
+}
+.reg-form h1{
+    text-align: center;
+    padding: .5rem;
+    color: var(--color-black-variant);
+}
+.reg-form input{
+    padding: 12px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--color-green-variant);
+    border-radius: 8px;
+    /* background: var(--color-grey-variant); */
+    background: transparent;
+    transition: .2s ease-in-out;
+}
+.reg-form input:focus,
+.reg-form input:active{
+    border-bottom: 2px solid var(--color-blue);
+    background: var(--color-white);
+}
+.reg-form input::placeholder{
+    font-size: 15px;
+}
+.reg-form label{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-black-variant);
+}
+.reg-form small{
+    color: red;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+.reg-sinin{
+    color: var(--color-black-variant);
+}
+.reg-sinin span a{
+    color: var(--color-green-variant);
+    cursor: pointer;
+}
+.reg-form button{
+    padding: 13px 45px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--color-green-variant);
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-black-variant);
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+.reg-form button:hover{
+    background: transparent;
+    border: 2px solid var(--color-green-variant);
+}
+.footer-reg{
+    margin: 0;
+    background: var(--color-green);
+    padding: 1rem 0;
+}
+.log-quiz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.8rem;
+}
+.log-quiz button{
+    padding: 7px 14px;
+    font-weight: 600;
+    margin-top: 2rem;
+    background: transparent;
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+}
+.log-quiz button:hover{
+    background: var(--color-green-variant);
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .register-container{
+        flex-direction: column;
+    }
+    .log-in-container{
+        height: 75vh;
+    }
+    .reg-form{
+        gap: 2rem;
+        padding: 18px;
+    }
+    .reg-side {
+        padding: 0;
+    }
+}

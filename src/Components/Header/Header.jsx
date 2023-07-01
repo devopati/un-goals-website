@@ -68,6 +68,15 @@ const Header = ({ configHead }) => {
           <Link to="about" onClick={() => setMenuActive(false)}>
             <li>about</li>
           </Link>
+
+          <div className="acc-btns">
+            <Link to="register">
+              <button id="reg-btn">Register</button>
+            </Link>
+            <Link to="login">
+              <button>Login</button>
+            </Link>
+          </div>
         </div>
         <div className="small-menu" onClick={() => setMenuActive(!menuActive)}>
           {menuActive ? <VscChromeClose /> : <HiOutlineMenuAlt3 />}
