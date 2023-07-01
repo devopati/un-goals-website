@@ -10,7 +10,7 @@ import {
 import { AiFillStar, AiTwotonePhone } from "react-icons/ai";
 import { TfiEmail } from "react-icons/tfi";
 // import "bootstrap-icons";
-import recycle from "../../assets/images/recycle.jpg";
+import recycle from "../../assets/images/food_waste3.jpg";
 import icon1 from "../../assets/images/icon1.png";
 import icon2 from "../../assets/images/icon2.png";
 import icon3 from "../../assets/images/icon3.png";
@@ -223,17 +223,15 @@ const Homepage = () => {
             </div>
           </div>
           <div className="circular-pattern-card cp-2">
-            <h2>Reducing waste</h2>
+            <h2>Reducing food waste</h2>
             <h3>
-              Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
-              velit auctor aliquet.
+            Food waste is responsible for 3 billion tonnes of carbon dioxide emissions.
             </h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
-              velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-              auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+              the earth cries out "save me". But this doesnt have to be the case everytime for we can fight together againts
+               food waste .see how peoplpe out there are fighting food waste by visiting our blog page.
             </p>
-            <button className="middle-btn mid-bottom-btn">
+            <button className="middle-btn mid-bottom-btn" >
               Learn More <BsFillArrowRightCircleFill id="btn-icon" />
             </button>
           </div>
