@@ -202,14 +202,19 @@ const Homepage = () => {
           circular <span>economy</span>
         </h1>
         <h3>
-          Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel velit
-          auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
-          elit consequat ipsum, nec sagittis sem nibh id elit.
+        green waste and the circular economy are interconnected concepts that promote sustainable
+         waste management and resource utilization. Green waste, which includes organic materials 
+         like food scraps and yard trimmings, can be effectively recycled and transformed into valuable
+          resources through processes like composting and anaerobic digestion. This enables the recovery
+           of nutrients, the generation of renewable energy, and the creation of economic opportunities. 
+           By incorporating green waste into circular economy models, we can minimize waste, maximize resource 
+           efficiency, and contribute to a more sustainable and regenerative approach to waste management and resource 
+           utilization.
         </h3>
         <div className="circular-pattern-btns">
-          <button>reduce</button>
-          <button>reuse</button>
-          <button>recycle</button>
+          <button>Clarity</button>
+          <button>Cleanse</button>
+          <button>Connect</button>
         </div>
         <div className="circular-pattern-cards">
           <div className="circular-pattern-card">
@@ -251,7 +256,7 @@ const Homepage = () => {
           </div>
           <div className="waste-counter-card">
             <h1>2590</h1>
-            <small>tress saved yearly</small>
+            <small>trees saved yearly</small>
           </div>
         </div>
       </div>
@@ -319,11 +324,7 @@ const Homepage = () => {
               </div>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
-              velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-              auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-              Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+             simple to use website and really informant , contains accurate fact and statistics.
             </p>
             <div className="client-avatar">
               <img
@@ -336,11 +337,7 @@ const Homepage = () => {
               </div>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
-              velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-              auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-              Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+              Im happy with the services offered by the chatbot really resourcfull in helping me find my way around the website.
             </p>
           </div>
         </div>
@@ -348,22 +345,22 @@ const Homepage = () => {
       <div className="homepage-international-icons">
         <div className="international-icons-cards">
           <div className="international-icons-card">
-            <img src={icon1} alt="" />
+            <img src={icon1} alt="icon" />
           </div>
           <div className="international-icons-card">
-            <img src={icon2} alt="" />
+            <img src={icon2} alt="icon" />
           </div>
           <div className="international-icons-card">
-            <img src={icon3} alt="" />
+            <img src={icon3} alt="icon" />
           </div>
           <div className="international-icons-card">
-            <img src={icon4} alt="" />
+            <img src={icon4} alt="icon" />
           </div>
           <div className="international-icons-card">
-            <img src={icon5} alt="" />
+            <img src={icon5} alt="icon" />
           </div>
           <div className="international-icons-card">
-            <img src={icon6} alt="" />
+            <img src={icon6} alt="icon" />
           </div>
         </div>
       </div>
