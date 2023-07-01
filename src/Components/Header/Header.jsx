@@ -16,6 +16,7 @@ import {
   SET_LOGIN,
   selectIsloggedIn,
 } from "../../Redux/Features/Auth/authSlice";
+import { toast } from "react-toastify";
 const Header = ({ configHead }) => {
   const dispatch = useDispatch();
 
@@ -38,6 +39,12 @@ const Header = ({ configHead }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const logoutUser = () => {
+    setMenuActive(false);
+    dispatch(SET_LOGIN(false));
+    toast.success("Logout Successfull");
+  };
 
   const isLoagedIn = useSelector(selectIsloggedIn);
   return (
@@ -79,8 +86,8 @@ const Header = ({ configHead }) => {
           </Link>
 
           {isLoagedIn ? (
-            <Link onClick={() => dispatch(SET_LOGIN(false))}>
-              <li>Logout</li>
+            <Link onClick={logoutUser}>
+              <li onClick={() => setMenuActive(false)}>Logout</li>
             </Link>
           ) : (
             <div className="acc-btns">
