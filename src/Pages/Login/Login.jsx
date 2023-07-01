@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { BsArrowLeftCircle } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { SET_LOGIN, SET_NAME } from "../../Redux/Features/Auth/authSlice";
+import { loginUser } from "../../services/authService";
+import { useDispatch } from "react-redux";
 
 const initialState = {
   email: "",
@@ -8,17 +11,22 @@ const initialState = {
 };
 
 const Login = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const getCurrentYear = new Date().getUTCFullYear();
   const [formData, setFormData] = useState(initialState);
   const { email, password } = formData;
 
   const [fielderr, setFielderr] = useState(false);
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleInputChange = (e) => {
     const { value, name } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!password || !email) {
       setFielderr(true);
@@ -28,7 +36,20 @@ const Login = () => {
       }, 4000);
       return;
     }
-    console.log(formData);
+    const userData = {
+      email,
+      password,
+    };
+    setIsLoading(true);
+    try {
+      const data = await loginUser(userData);
+      await dispatch(SET_LOGIN(true));
+      await dispatch(SET_NAME(data.user.name));
+      navigate("/");
+      setIsLoading(false);
+    } catch (error) {
+      setIsLoading(false);
+    }
   };
   return (
     <>
@@ -80,7 +101,7 @@ const Login = () => {
               </h4>
             </div>
             <div className="frm-btn">
-              <button>Sign in</button>
+              <button>{isLoading ? "Processing..." : "Sign in"}</button>
             </div>
           </form>
         </div>

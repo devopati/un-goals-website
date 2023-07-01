@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./Register.css";
 import { BsArrowLeftCircle } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { registerUser } from "../../services/authService";
+import { useDispatch } from "react-redux";
+import { SET_LOGIN, SET_NAME } from "../../Redux/Features/Auth/authSlice";
 
 const initialState = {
   name: "",
@@ -11,6 +14,9 @@ const initialState = {
 };
 
 const Register = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const getCurrentYear = new Date().getUTCFullYear();
   const [formData, setFormData] = useState(initialState);
   const { name, email, password, conPassword } = formData;
@@ -18,11 +24,13 @@ const Register = () => {
   const [passerr, setPaserr] = useState(false);
   const [fielderr, setFielderr] = useState(false);
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleInputChange = (e) => {
     const { value, name } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!name || !password || !conPassword || !email) {
       setFielderr(true);
@@ -42,7 +50,25 @@ const Register = () => {
         setPaserr(false);
       }, 4000);
     }
-    console.log(formData);
+
+    const userData = {
+      name,
+      email,
+      password,
+    };
+    setIsLoading(true);
+    try {
+      const data = await registerUser(userData);
+      await dispatch(SET_LOGIN(true));
+      await dispatch(SET_NAME(data.user.name));
+      navigate("/blog");
+      setIsLoading(false);
+      console.log(data.user.name);
+    } catch (error) {
+      console.log(error);
+      setIsLoading(false);
+      return;
+    }
   };
   return (
     <>
@@ -111,7 +137,7 @@ const Register = () => {
               </h4>
             </div>
             <div className="frm-btn">
-              <button>Signup</button>
+              <button>{isLoading ? "Processing... " : "Signup"}</button>
             </div>
           </form>
         </div>

@@ -76,6 +76,7 @@
     border-radius: 3px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    cursor: pointer;
 }
 .header-menu-items button:hover{
     border: 2px solid var(--color-blue);

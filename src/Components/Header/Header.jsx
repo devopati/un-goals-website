@@ -11,7 +11,14 @@ import {
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { VscChromeClose } from "react-icons/vsc";
 import logo from "../../assets/images/un-logo.png";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  SET_LOGIN,
+  selectIsloggedIn,
+} from "../../Redux/Features/Auth/authSlice";
 const Header = ({ configHead }) => {
+  const dispatch = useDispatch();
+
   const [menuActive, setMenuActive] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
@@ -31,6 +38,8 @@ const Header = ({ configHead }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const isLoagedIn = useSelector(selectIsloggedIn);
   return (
     <div className={`header-container `}>
       <div className="header-top-socials">
@@ -69,14 +78,20 @@ const Header = ({ configHead }) => {
             <li>about</li>
           </Link>
 
-          <div className="acc-btns">
-            <Link to="register">
-              <button id="reg-btn">Register</button>
+          {isLoagedIn ? (
+            <Link onClick={() => dispatch(SET_LOGIN(false))}>
+              <li>Logout</li>
             </Link>
-            <Link to="login">
-              <button>Login</button>
-            </Link>
-          </div>
+          ) : (
+            <div className="acc-btns">
+              <Link to="/register">
+                <button id="reg-btn">Register</button>
+              </Link>
+              <Link to="/login">
+                <button>Login</button>
+              </Link>
+            </div>
+          )}
         </div>
         <div className="small-menu" onClick={() => setMenuActive(!menuActive)}>
           {menuActive ? <VscChromeClose /> : <HiOutlineMenuAlt3 />}
