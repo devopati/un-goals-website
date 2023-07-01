@@ -99,6 +99,7 @@
         /* position: fixed; */
         top :0;
         width: 100%;
+        z-index: 10;
     }
     .small-menu{
         display: block;
@@ -120,7 +121,7 @@
         /* gap: 1.8rem; */
     }
     .menu-active{
-        top: 4vh;
+        top: 0;
     }
     .header-menu-container{
         position: sticky;

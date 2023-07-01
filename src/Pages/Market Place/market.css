@@ -15,7 +15,7 @@
 }
 @media screen and (max-width:768px) {
     .market-container{
-        padding:10rem .4rem;
+        padding:6rem .4rem;
     }
     .market-cards{
         display: grid;
