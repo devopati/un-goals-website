@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./register.css";
+import "./Register.css";
 import { BsArrowLeftCircle } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
