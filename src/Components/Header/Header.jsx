@@ -74,14 +74,14 @@ const Header = ({ configHead }) => {
           <Link to="/" onClick={() => setMenuActive(false)}>
             <li>home</li>
           </Link>
-          <Link to="market" onClick={() => setMenuActive(false)}>
+          <Link to="/market" onClick={() => setMenuActive(false)}>
             <li>market</li>
           </Link>
           <Link to="/blog" onClick={() => setMenuActive(false)}>
             <li>blog</li>
           </Link>
 
-          <Link to="about" onClick={() => setMenuActive(false)}>
+          <Link to="/about" onClick={() => setMenuActive(false)}>
             <li>about</li>
           </Link>
 
