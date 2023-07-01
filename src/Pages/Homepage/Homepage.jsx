@@ -81,16 +81,14 @@ const Homepage = () => {
         <div className="home-middle-cards">
           <div className="home-middle-card">
             <small className="round-head">What we do</small>
-            <h1>Welcome to Recycle</h1>
+            <h1>Welcome to Green Reuse</h1>
             <h3>
-              We are a Leading Global Waste Management Company, Committed to The
-              Environment
+              We are a Food Waste Management Company, committed to The
+              environment
             </h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              massa ligula, aliquet euismod eleifend vitae, interdum ut mi.
-              Praesent fringilla pharetra sapien sit amet semper. Nunc id massa
-              ut mi tempus mattis ac eu lectus.
+               We address the challenges asscociated with food waste and providing sustainable solutions. Our team provides advisory services to help users, organisation suh as school and many others to optimize their operations and minimizefood waste generation. 
+
               <button className="middle-btn">
                 Learn More <BsFillArrowRightCircleFill id="btn-icon" />
               </button>
