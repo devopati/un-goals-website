@@ -96,7 +96,7 @@
 
 @media screen and (max-width:768px) {
     .header-container{
-        position: fixed;
+        /* position: fixed; */
         top :0;
         width: 100%;
     }
@@ -125,13 +125,15 @@
     .header-menu-container{
         position: sticky;
         padding: .7rem;
-        padding-top: 3.5rem;
+        /* padding-top: 3.5rem; */
+        position: fixed;
+        width: 100%;
     }
     .header-top-socials{
-        position: fixed;
+        /* position: fixed;
         width: 100vw;
         z-index: 6;
-        justify-content: center;
+        justify-content: center; */
     }
     .header-scrolled{
         height: max-content;

@@ -94,7 +94,7 @@ const Login = () => {
             />
             <div className="reg-sinin">
               <h4>
-                Don't an account?{" "}
+                Don't have an account?{" "}
                 <span>
                   <Link to="/register">Signup</Link>
                 </span>

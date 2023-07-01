@@ -25,7 +25,7 @@ const Header = ({ configHead }) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const headerHeight = window.innerHeight * 0.4;
+      const headerHeight = window.innerHeight * 0.1;
 
       if (scrollPosition > headerHeight) {
         setIsScrolled(true);
