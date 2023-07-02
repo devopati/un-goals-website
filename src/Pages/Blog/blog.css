@@ -1,16 +1,19 @@
 .blog-body{
-    background: var(--color-green);
+   /* background: var(--color-green);*/
+    background-image: url(C:\Users\User\Documents\GitHub\un-goals-website\src\assets\images\just_green.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
     padding-bottom: 2.5rem;
 }
 .blog-header{
     text-align: center;
     padding-top: 3.5rem;
-    color: var(--color-green-variant);
+    color: var(--color-white);
 }
 .blog-posts{
     width: 60%;
     /* height: 295px; */
-    background: var(--color-grey-variant);
+   background: var(--color-grey-variant);
     margin: auto;
     overflow: hidden;
     padding: 2.2rem;
@@ -74,7 +77,7 @@
     padding-top: 3rem;
     width: 60%;
     margin: auto;
-    color: var(--color-green-variant);
+    color: var(--color-white);
 }
 #fblog-icon{
     font-size: 34px;

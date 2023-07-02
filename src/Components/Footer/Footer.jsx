@@ -61,7 +61,8 @@ const Footer = () => {
               </div>
               <div>
                 <AiTwotonePhone id="footer-icon" />
-                <h5>07-58-233-436</h5>
+                <h5>07-58-233-436 / 07-99-387-818</h5>
+                
               </div>
               <div>
                 <TfiEmail id="footer-icon" />
