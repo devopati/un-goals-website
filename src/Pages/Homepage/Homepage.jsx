@@ -314,7 +314,7 @@ const Homepage = () => {
             <div className="client-avatar">
               <img
                 src="https://recycle.orionthemes.com/demo-1/wp-content/uploads/2016/12/teammember3-150x150.jpg"
-                alt=""
+                alt="profile picture"
               />
               <div>
                 <small>Andrew London</small>
@@ -327,7 +327,7 @@ const Homepage = () => {
             <div className="client-avatar">
               <img
                 src="https://recycle.orionthemes.com/demo-1/wp-content/uploads/2016/11/teammember5-150x150.jpg"
-                alt=""
+                alt="profile picture"
               />
               <div>
                 <small>Robert Jones</small>
