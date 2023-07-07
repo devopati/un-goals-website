@@ -1,6 +1,6 @@
 .blog-body{
-   /* background: var(--color-green);*/
-    background-image: url(C:\Users\User\Documents\GitHub\un-goals-website\src\assets\images\just_green.jpg);
+   background: var(--color-green);
+    background-image: url("C:\Users\user\Documents\GitHub\un-goals-website\src\assets\images\just_green.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     padding-bottom: 2.5rem;
