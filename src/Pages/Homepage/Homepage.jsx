@@ -10,7 +10,7 @@ import {
 import { AiFillStar, AiTwotonePhone } from "react-icons/ai";
 import { TfiEmail } from "react-icons/tfi";
 // import "bootstrap-icons";
-import recycle from "../../assets/images/recycle.jpg";
+import recycle from "../../assets/images/food_waste3.jpg";
 import icon1 from "../../assets/images/icon1.png";
 import icon2 from "../../assets/images/icon2.png";
 import icon3 from "../../assets/images/icon3.png";
@@ -202,14 +202,19 @@ const Homepage = () => {
           circular <span>economy</span>
         </h1>
         <h3>
-          Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel velit
-          auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
-          elit consequat ipsum, nec sagittis sem nibh id elit.
+        green waste and the circular economy are interconnected concepts that promote sustainable
+         waste management and resource utilization. Green waste, which includes organic materials 
+         like food scraps and yard trimmings, can be effectively recycled and transformed into valuable
+          resources through processes like composting and anaerobic digestion. This enables the recovery
+           of nutrients, the generation of renewable energy, and the creation of economic opportunities. 
+           By incorporating green waste into circular economy models, we can minimize waste, maximize resource 
+           efficiency, and contribute to a more sustainable and regenerative approach to waste management and resource 
+           utilization.
         </h3>
         <div className="circular-pattern-btns">
-          <button>reduce</button>
-          <button>reuse</button>
-          <button>recycle</button>
+          <button>Clarity</button>
+          <button>Cleanse</button>
+          <button>Connect</button>
         </div>
         <div className="circular-pattern-cards">
           <div className="circular-pattern-card">
@@ -218,17 +223,15 @@ const Homepage = () => {
             </div>
           </div>
           <div className="circular-pattern-card cp-2">
-            <h2>Reducing waste</h2>
+            <h2>Reducing food waste</h2>
             <h3>
-              Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
-              velit auctor aliquet.
+            Food waste is responsible for 3 billion tonnes of carbon dioxide emissions.
             </h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
-              velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-              auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+              the earth cries out "save me". But this doesnt have to be the case everytime for we can fight together againts
+               food waste .see how peoplpe out there are fighting food waste by visiting our blog page.
             </p>
-            <button className="middle-btn mid-bottom-btn">
+            <button className="middle-btn mid-bottom-btn" >
               Learn More <BsFillArrowRightCircleFill id="btn-icon" />
             </button>
           </div>
@@ -251,7 +254,7 @@ const Homepage = () => {
           </div>
           <div className="waste-counter-card">
             <h1>2590</h1>
-            <small>tress saved yearly</small>
+            <small>trees saved yearly</small>
           </div>
         </div>
       </div>
@@ -311,7 +314,7 @@ const Homepage = () => {
             <div className="client-avatar">
               <img
                 src="https://recycle.orionthemes.com/demo-1/wp-content/uploads/2016/12/teammember3-150x150.jpg"
-                alt=""
+                alt="profile picture"
               />
               <div>
                 <small>Andrew London</small>
@@ -319,16 +322,12 @@ const Homepage = () => {
               </div>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
-              velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-              auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-              Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+             simple to use website and really informant , contains accurate fact and statistics.
             </p>
             <div className="client-avatar">
               <img
                 src="https://recycle.orionthemes.com/demo-1/wp-content/uploads/2016/11/teammember5-150x150.jpg"
-                alt=""
+                alt="profile picture"
               />
               <div>
                 <small>Robert Jones</small>
@@ -336,11 +335,7 @@ const Homepage = () => {
               </div>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
-              velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-              auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-              Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-              Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+              Im happy with the services offered by the chatbot really resourcfull in helping me find my way around the website.
             </p>
           </div>
         </div>
@@ -348,22 +343,22 @@ const Homepage = () => {
       <div className="homepage-international-icons">
         <div className="international-icons-cards">
           <div className="international-icons-card">
-            <img src={icon1} alt="" />
+            <img src={icon1} alt="icon" />
           </div>
           <div className="international-icons-card">
-            <img src={icon2} alt="" />
+            <img src={icon2} alt="icon" />
           </div>
           <div className="international-icons-card">
-            <img src={icon3} alt="" />
+            <img src={icon3} alt="icon" />
           </div>
           <div className="international-icons-card">
-            <img src={icon4} alt="" />
+            <img src={icon4} alt="icon" />
           </div>
           <div className="international-icons-card">
-            <img src={icon5} alt="" />
+            <img src={icon5} alt="icon" />
           </div>
           <div className="international-icons-card">
-            <img src={icon6} alt="" />
+            <img src={icon6} alt="icon" />
           </div>
         </div>
       </div>

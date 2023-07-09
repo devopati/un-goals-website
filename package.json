@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ibm-watson/assistant-web-chat-react": "^1.0.4",
     "@reduxjs/toolkit": "^1.9.5",
     "axios": "^1.4.0",
     "react": "^18.2.0",

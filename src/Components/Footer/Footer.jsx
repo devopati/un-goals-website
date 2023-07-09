@@ -30,12 +30,15 @@ const Footer = () => {
         <div className="footer-menu">
           <div className="footer-menu-cards">
             <div className="footer-menu-card footer-about">
-              <h2>about</h2>
+              <h2>about us</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                massa ligula, aliquet euismod eleifend vitae, interdum ut mi.
-                Praesent fringilla pharetra sapien sit amet semper. Nunc id
-                massa ut mi tempus mattis ac eu lectus. or project.
+              Welcome to Green Waste Recycle Hub, your go-to online
+               platform for all things related to green waste recycling. 
+               Our mission is to educate and empower individuals, businesses, 
+               and communities to embrace sustainable waste management practices 
+               while creating a marketplace for buying and selling green waste resources. 
+               We believe in the power of collaboration and the transformative potential of 
+               recycling, and we are here to connect like-minded individuals and foster a greener, cleaner future.
               </p>
               <button>about</button>
             </div>
@@ -53,16 +56,17 @@ const Footer = () => {
                 <BsRecycle id="footer-icon" />
                 <div>
                   <h5>recycling company</h5>
-                  <h5>595 Commonwealth Ave, Massachusetts 02215</h5>
+                  <h5>Thika , Kenya</h5>
                 </div>
               </div>
               <div>
                 <AiTwotonePhone id="footer-icon" />
-                <h5>+1-202-555-0190</h5>
+                <h5>07-58-233-436 / 07-99-387-818</h5>
+                
               </div>
               <div>
                 <TfiEmail id="footer-icon" />
-                <h5>email@example.com</h5>
+                <h5>georgiehackathon@gmail.com</h5>
               </div>
               <div>
                 <TbWorldWww id="footer-icon" />
