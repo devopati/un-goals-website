@@ -17,17 +17,11 @@
         integrationID: "f4e975bb-9e67-4dac-88c7-7d536dc07c18", // The ID of this integration.
         region: "eu-gb", // The region your integration is hosted in.
         serviceInstanceID: "6bc2c4e5-534a-4665-ba02-2d87fb6cea01", // The ID of your service instance.
-        onLoad: function (instance) {
-          instance.updateUserID("L12345");
-          instance.render();
-        },
+        onLoad: function(instance) { instance.render(); }
       };
-      setTimeout(function () {
-        const t = document.createElement("script");
-        t.src =
-          "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
-          (window.watsonAssistantChatOptions.clientVersion || "latest") +
-          "/WatsonAssistantChatEntry.js";
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
         document.head.appendChild(t);
       });
     </script>
