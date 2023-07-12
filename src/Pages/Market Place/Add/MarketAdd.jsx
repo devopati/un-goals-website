@@ -48,7 +48,7 @@ const MarketAdd = ({ marketAddOpen, setMarketAddOpen, data }) => {
   //   console.log(getTime());
 
   const getImage = () => {
-    const index = Math.floor(Math.random() * imgUrls.length + 1);
+    const index = Math.floor(Math.random() * imgUrls.length);
     return imgUrls[index];
   };
   //   console.log(getImage());
