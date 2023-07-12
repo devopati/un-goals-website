@@ -53,12 +53,15 @@ const About = () => {
              smartphones or may not have access to smartphones at all. We understand the importance of
               inclusivity and are actively exploring options to make our chatbot more widely accessible
                across different platforms.
-            Slide 4: Integration via SMS
+             INTERGRATION VIA SMS
             
             Limitation of SMS Integration: Another challenge we encountered was the inability to integrate 
             our chatbot through SMS. This poses a barrier for users who do not have consistent internet access
              or cannot afford smartphones. We recognize the need for alternative channels of communication and
               are exploring potential solutions to make our chatbot accessible through SMS or other means.
+
+              CHATBOT ACCURACY: the chatbot is still under development hence can answer limited set of questions
+              and its accuracy ranges from 60 to 70% on the content we have trained it with.
             </p>
             <h1>future recommendations</h1>
             <p>
@@ -72,6 +75,7 @@ const About = () => {
               limited access to technology. We will continue to work diligently to overcome these limitations 
               and make our chatbot     available to all users, regardless of their circumstances.
             </p>
+            
 
             <h1>scope of project</h1>
             <p>
