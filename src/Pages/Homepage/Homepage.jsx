@@ -34,11 +34,11 @@ const Homepage = () => {
       <div className="homepage-sub-hero">
         <div className="sub-hero-cards">
           <div className="sub-hero-card">
-            <h2>INDUSTRIAL</h2>
-            <h3>Waste Management</h3>
+            <h2>CONTROL</h2>
+            <h3>Green Waste Management</h3>
             <p>
-              We offer complete industrial waste management services, from
-              collection to recycling.
+              We aim at empowering peole to take an initiative to prevent further degradation of the environment
+              by employing sustainable methods while disposing of green waste.
             </p>
 
             <button className="subhero-btn">
@@ -46,22 +46,23 @@ const Homepage = () => {
             </button>
           </div>
           <div className="sub-hero-card">
-            <h2>SUSTAINABLE</h2>
-            <h3>Business Solutions</h3>
+            <h2>COGNITIVE</h2>
+            <h3>Artificial intelligence</h3>
             <p>
-              We help business adopt sustainable and environmentally responsible
-              recycling practices.
+            With our integrated Watson chatbot, we provide a dynamic platform aimed at spreading awareness 
+            about green waste management. Through interactive conversations and informative content,
+             we empower individuals to become knowledgeable advocates for sustainable practices.
             </p>
             <button className="subhero-btn">
               Learn More <BsFillArrowRightCircleFill id="btn-icon" />
             </button>
           </div>
           <div className="sub-hero-card">
-            <h2>ENVIRONMENTAL</h2>
-            <h3>Quality Services</h3>
+            <h2>CONSERVATION</h2>
+            <h3>Educating community</h3>
             <p>
               We focus on disposing of all waste sustainably minimizing
-              environmental impact.
+              environmental impact. this is by creating awareness to the communinty through the blogs on our website.
             </p>
             <button className="subhero-btn">
               Learn More <BsFillArrowRightCircleFill id="btn-icon" />
@@ -107,12 +108,12 @@ const Homepage = () => {
       <div className="homepage-mid-section">
         <div className="midsection-header">
           <h1>
-            buy & <span>sell</span> gabbbage
+            buy & <span>sell</span> green waste
           </h1>
           <h3>
-            We offer comprehensive recycling, industry-specific waste
-            management, quality control & sustainability solutions for
-            businesses and corporations.
+            We offer a platform where people with green waste can meet and 
+            buy and sell green waste to one another,this is achieved by connecting 
+            them through the market page on our website.
             <span className="sow-icon-environmental"></span>
           </h3>
         </div>
@@ -124,9 +125,9 @@ const Homepage = () => {
         <div className="midbottom-head">
           <h1>latest articles</h1>
           <h3>
-            Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh vel
-            velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-            auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+          Explore a vibrant hub of eco-friendly tips, innovative techniques, and practical solutions that will empower you to make a positive impact on the environment. From composting secrets to clever recycling hacks, our articles will guide you towards reducing waste, conserving resources, and nurturing a healthier planet. 
+          Dive into our blog now and discover the path to a more sustainable future!
+
           </h3>
           <div className="mid-bootom-cards">
             <div className="midbottom-card">
@@ -135,13 +136,10 @@ const Homepage = () => {
                   august 15, 2012 | <span>recycling</span>
                 </h4>
               </div>
-              <h2>how to recycle paper</h2>
+              <h2>Hidden Consequences of Green Waste</h2>
               <div className="mid-paragraph">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh
-                  vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                  bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit.
+                In today's world, where environmental concerns are paramount, the management of green waste plays a crucial role in achieving sustainable development. Green waste refers to organic waste derived from plants, including food scraps, yard trimmings, and agricultural residues.
                 </p>
               </div>
               <button className="middle-btn mid-bottom-btn">
@@ -151,16 +149,13 @@ const Homepage = () => {
             <div className="midbottom-card">
               <div className="mid-top">
                 <h4>
-                  january 26, 2022 | <span>recycling</span>
+                  january 18, 2023 | <span>recycling</span>
                 </h4>
               </div>
-              <h2>green business solutions</h2>
+              <h2>Manage Home Food Intake</h2>
               <div className="mid-paragraph">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh
-                  vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                  bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit.
+                Managing home food intake effectively is crucial to reduce food waste. Key strategies include meal planning, portion control, practicing the FIFO method for organizing food, proper storage techniques, creatively using leftovers, utilizing preservation methods, composting unavoidable food waste, donating excess food, smart shopping, and raising awareness about the impact of food waste.
                 </p>
               </div>
               <button className="middle-btn mid-bottom-btn">
@@ -170,20 +165,16 @@ const Homepage = () => {
             <div className="midbottom-card">
               <div className="mid-top">
                 <h4>
-                  december 13, 2016 | <span>recycling</span>
+                  february 1, 2023 | <span>recycling</span>
                 </h4>
               </div>
               <h2>waste management tips</h2>
               <div className="mid-paragraph">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetuer. Proin gravida nibh
-                  vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                  bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. bibendum auctor, nisi elit consequat ipsum, nec
-                  sagittis sem nibh id elit. nibh id elit. bibendum auctor, nisi
-                  elit consequat ipsum, nec sagittis sem nibh id elit. sagittis
-                  sem nibh id elit. nibh id elit. bibendum auctor, nisi elit
-                  consequat ipsum, nec sagittis sem nibh id elit.
+                To effectively manage green waste, several practices can be implemented. Composting allows
+                 the conversion of organic kitchen waste and yard trimmings into nutrient-rich compost, benefiting gardens and reducing
+                  landfill waste. Grasscycling, the practice of leaving grass clippings on the lawn, 
+                promotes natural decomposition and enriches the soil. 
                 </p>
               </div>
               <button className="middle-btn mid-bottom-btn">
@@ -212,9 +203,10 @@ const Homepage = () => {
            utilization.
         </h3>
         <div className="circular-pattern-btns">
-          <button>Clarity</button>
-          <button>Cleanse</button>
-          <button>Connect</button>
+          <button><b>CONTROL</b></button>
+          <button><b>COGNITIVE</b></button>
+          <button><b>CONSERVATION</b></button>
+          
         </div>
         <div className="circular-pattern-cards">
           <div className="circular-pattern-card">
