@@ -139,7 +139,7 @@
     transform: translateX(7px);
   }
   .homemid-image{
-    background: url("https://plus.unsplash.com/premium_photo-1663099874638-c9e74bb35661?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZW52aXJvbm1lbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60");
+    background: url("../../assets/images/takataka3.jpg");
     background-size: cover;
     height: 100%;
     border: 5px solid var(--color-green);
@@ -368,7 +368,7 @@
 }
 .homepage-waste-counter{
     position: relative;
-    background: url("../../assets/images/counter.jpg");
+    background: url("../../assets/images/smallsections.jpeg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
