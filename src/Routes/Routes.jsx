@@ -8,6 +8,7 @@ import Register from "../Pages/Register/Register";
 import Login from "../Pages/Login/Login";
 import Market from "../Pages/Market Place/Market";
 import About from "../Pages/About/About";
+import MarketAdd from "../Pages/Market Place/Add/MarketAdd";
 
 const WebRoutes = () => {
   return (
@@ -20,6 +21,7 @@ const WebRoutes = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/market" element={<Market />} />
+          <Route path="/addmarket" element={<MarketAdd />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
