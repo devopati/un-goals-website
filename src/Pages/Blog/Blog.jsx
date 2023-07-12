@@ -7,7 +7,7 @@ import { BlogData } from "../../Data/BlogData";
 import { Link } from "react-router-dom";
 import Footer from "../../Components/Footer/Footer";
 
-BlogData.push({id:"jjfjjf12", heading:"Home menu", date: "June 26, 2023",    blogText:"jrfjhjhrd" })
+// BlogData.push({id:"jjfjjf12", heading:"Home menu", date: "June 26, 2023",    blogText:"jrfjhjhrd" })
 
 const Blog = () => {
   useEffect(() => {

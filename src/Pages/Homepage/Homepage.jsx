@@ -19,8 +19,10 @@ import icon5 from "../../assets/images/icon5.png";
 import icon6 from "../../assets/images/icon6.png";
 import { HiUser } from "react-icons/hi";
 import Footer from "../../Components/Footer/Footer";
+import { useNavigate } from "react-router";
 
 const Homepage = () => {
+  const navigate = useNavigate();
   return (
     <div className="homepage-container">
       <div className="homepage-hero">
@@ -37,23 +39,23 @@ const Homepage = () => {
             <h2>CONTROL</h2>
             <h3>Green Waste Management</h3>
             <p>
-              We aim at empowering peole to take an initiative to prevent further degradation of the environment
-              by employing sustainable methods while disposing of green waste.
+              We aim at empowering peole to take an initiative to prevent
+              further degradation of the environment by employing sustainable
+              methods while disposing of green waste.
             </p>
 
-            <button className="subhero-btn">
+            {/* <button className="subhero-btn">
               Learn More <BsFillArrowRightCircleFill id="btn-icon" />
-            </button>
+            </button> */}
           </div>
           <div className="sub-hero-card">
             <h2>COGNITIVE</h2>
             <h3>Artificial intelligence</h3>
             <p>
-            With our integrated Watson chatbot, we provide a dynamic platform aimed at spreading awareness 
-            about green waste management. Through interactive conversations and informative content,
-             we empower individuals to become knowledgeable advocates for sustainable practices.
+              With our integrated Watson chatbot, we provide a dynamic platform
+              aimed at spreading awareness about green waste management.
             </p>
-            <button className="subhero-btn">
+            <button className="subhero-btn" onClick={() => navigate("/about")}>
               Learn More <BsFillArrowRightCircleFill id="btn-icon" />
             </button>
           </div>
@@ -62,11 +64,12 @@ const Homepage = () => {
             <h3>Educating community</h3>
             <p>
               We focus on disposing of all waste sustainably minimizing
-              environmental impact. this is by creating awareness to the communinty through the blogs on our website.
+              environmental impact. this is by creating awareness to the
+              communinty through the blogs on our website.
             </p>
-            <button className="subhero-btn">
+            {/* <button className="subhero-btn">
               Learn More <BsFillArrowRightCircleFill id="btn-icon" />
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
@@ -88,9 +91,11 @@ const Homepage = () => {
               environment
             </h3>
             <p>
-               We address the challenges asscociated with food waste and providing sustainable solutions. Our team provides advisory services to help users, organisation suh as school and many others to optimize their operations and minimizefood waste generation. 
-
-              <button className="middle-btn">
+              We address the challenges asscociated with food waste and
+              providing sustainable solutions. Our team provides advisory
+              services to help users, organisation suh as school and many others
+              to optimize their operations and minimizefood waste generation.
+              <button className="middle-btn" onClick={() => navigate("/about")}>
                 Learn More <BsFillArrowRightCircleFill id="btn-icon" />
               </button>
             </p>
@@ -111,11 +116,17 @@ const Homepage = () => {
             buy & <span>sell</span> green waste
           </h1>
           <h3>
-            We offer a platform where people with green waste can meet and 
-            buy and sell green waste to one another,this is achieved by connecting 
+            We offer a platform where people with green waste can meet and buy
+            and sell green waste to one another,this is achieved by connecting
             them through the market page on our website.
             <span className="sow-icon-environmental"></span>
           </h3>
+          <button
+            className="middle-btn mid-bottom-btn"
+            onClick={() => navigate("/market")}
+          >
+            To Market <BsFillArrowRightCircleFill id="btn-icon" />
+          </button>
         </div>
       </div>
       <div className="homepage-mid-bottom">
@@ -125,9 +136,12 @@ const Homepage = () => {
         <div className="midbottom-head">
           <h1>latest articles</h1>
           <h3>
-          Explore a vibrant hub of eco-friendly tips, innovative techniques, and practical solutions that will empower you to make a positive impact on the environment. From composting secrets to clever recycling hacks, our articles will guide you towards reducing waste, conserving resources, and nurturing a healthier planet. 
-          Dive into our blog now and discover the path to a more sustainable future!
-
+            Explore a vibrant hub of eco-friendly tips, innovative techniques,
+            and practical solutions that will empower you to make a positive
+            impact on the environment. From composting secrets to clever
+            recycling hacks, our articles will guide you towards reducing waste,
+            conserving resources, and nurturing a healthier planet. Dive into
+            our blog now and discover the path to a more sustainable future!
           </h3>
           <div className="mid-bootom-cards">
             <div className="midbottom-card">
@@ -139,10 +153,17 @@ const Homepage = () => {
               <h2>Hidden Consequences of Green Waste</h2>
               <div className="mid-paragraph">
                 <p>
-                In today's world, where environmental concerns are paramount, the management of green waste plays a crucial role in achieving sustainable development. Green waste refers to organic waste derived from plants, including food scraps, yard trimmings, and agricultural residues.
+                  In today's world, where environmental concerns are paramount,
+                  the management of green waste plays a crucial role in
+                  achieving sustainable development. Green waste refers to
+                  organic waste derived from plants, including food scraps, yard
+                  trimmings, and agricultural residues.
                 </p>
               </div>
-              <button className="middle-btn mid-bottom-btn">
+              <button
+                className="middle-btn mid-bottom-btn"
+                onClick={() => navigate("/blog")}
+              >
                 Learn More <BsFillArrowRightCircleFill id="btn-icon" />
               </button>
             </div>
@@ -155,10 +176,19 @@ const Homepage = () => {
               <h2>Manage Home Food Intake</h2>
               <div className="mid-paragraph">
                 <p>
-                Managing home food intake effectively is crucial to reduce food waste. Key strategies include meal planning, portion control, practicing the FIFO method for organizing food, proper storage techniques, creatively using leftovers, utilizing preservation methods, composting unavoidable food waste, donating excess food, smart shopping, and raising awareness about the impact of food waste.
+                  Managing home food intake effectively is crucial to reduce
+                  food waste. Key strategies include meal planning, portion
+                  control, practicing the FIFO method for organizing food,
+                  proper storage techniques, creatively using leftovers,
+                  utilizing preservation methods, composting unavoidable food
+                  waste, donating excess food, smart shopping, and raising
+                  awareness about the impact of food waste.
                 </p>
               </div>
-              <button className="middle-btn mid-bottom-btn">
+              <button
+                className="middle-btn mid-bottom-btn"
+                onClick={() => navigate("/blog")}
+              >
                 Learn More <BsFillArrowRightCircleFill id="btn-icon" />
               </button>
             </div>
@@ -171,13 +201,18 @@ const Homepage = () => {
               <h2>waste management tips</h2>
               <div className="mid-paragraph">
                 <p>
-                To effectively manage green waste, several practices can be implemented. Composting allows
-                 the conversion of organic kitchen waste and yard trimmings into nutrient-rich compost, benefiting gardens and reducing
-                  landfill waste. Grasscycling, the practice of leaving grass clippings on the lawn, 
-                promotes natural decomposition and enriches the soil. 
+                  To effectively manage green waste, several practices can be
+                  implemented. Composting allows the conversion of organic
+                  kitchen waste and yard trimmings into nutrient-rich compost,
+                  benefiting gardens and reducing landfill waste. Grasscycling,
+                  the practice of leaving grass clippings on the lawn, promotes
+                  natural decomposition and enriches the soil.
                 </p>
               </div>
-              <button className="middle-btn mid-bottom-btn">
+              <button
+                className="middle-btn mid-bottom-btn"
+                onClick={() => navigate("/blog")}
+              >
                 Learn More <BsFillArrowRightCircleFill id="btn-icon" />
               </button>
             </div>
@@ -193,20 +228,27 @@ const Homepage = () => {
           circular <span>economy</span>
         </h1>
         <h3>
-        green waste and the circular economy are interconnected concepts that promote sustainable
-         waste management and resource utilization. Green waste, which includes organic materials 
-         like food scraps and yard trimmings, can be effectively recycled and transformed into valuable
-          resources through processes like composting and anaerobic digestion. This enables the recovery
-           of nutrients, the generation of renewable energy, and the creation of economic opportunities. 
-           By incorporating green waste into circular economy models, we can minimize waste, maximize resource 
-           efficiency, and contribute to a more sustainable and regenerative approach to waste management and resource 
-           utilization.
+          green waste and the circular economy are interconnected concepts that
+          promote sustainable waste management and resource utilization. Green
+          waste, which includes organic materials like food scraps and yard
+          trimmings, can be effectively recycled and transformed into valuable
+          resources through processes like composting and anaerobic digestion.
+          This enables the recovery of nutrients, the generation of renewable
+          energy, and the creation of economic opportunities. By incorporating
+          green waste into circular economy models, we can minimize waste,
+          maximize resource efficiency, and contribute to a more sustainable and
+          regenerative approach to waste management and resource utilization.
         </h3>
         <div className="circular-pattern-btns">
-          <button><b>CONTROL</b></button>
-          <button><b>COGNITIVE</b></button>
-          <button><b>CONSERVATION</b></button>
-          
+          <button>
+            <b>CONTROL</b>
+          </button>
+          <button>
+            <b>COGNITIVE</b>
+          </button>
+          <button>
+            <b>CONSERVATION</b>
+          </button>
         </div>
         <div className="circular-pattern-cards">
           <div className="circular-pattern-card">
@@ -217,13 +259,19 @@ const Homepage = () => {
           <div className="circular-pattern-card cp-2">
             <h2>Reducing food waste</h2>
             <h3>
-            Food waste is responsible for 3 billion tonnes of carbon dioxide emissions.
+              Food waste is responsible for 3 billion tonnes of carbon dioxide
+              emissions.
             </h3>
             <p>
-              the earth cries out "save me". But this doesnt have to be the case everytime for we can fight together againts
-               food waste .see how peoplpe out there are fighting food waste by visiting our blog page.
+              the earth cries out "save me". But this doesnt have to be the case
+              everytime for we can fight together againts food waste .see how
+              peoplpe out there are fighting food waste by visiting our blog
+              page.
             </p>
-            <button className="middle-btn mid-bottom-btn" >
+            <button
+              className="middle-btn mid-bottom-btn"
+              onClick={() => navigate("/blog")}
+            >
               Learn More <BsFillArrowRightCircleFill id="btn-icon" />
             </button>
           </div>
@@ -305,7 +353,7 @@ const Homepage = () => {
             </h1>
             <div className="client-avatar">
               <img
-               /* src="https://recycle.orionthemes.com/demo-1/wp-content/uploads/2016/12/teammember3-150x150.jpg"*/
+                /* src="https://recycle.orionthemes.com/demo-1/wp-content/uploads/2016/12/teammember3-150x150.jpg"*/
                 alt="profile picture"
               />
               <div>
@@ -314,7 +362,8 @@ const Homepage = () => {
               </div>
             </div>
             <p>
-             simple to use website and really informant , contains accurate fact and statistics.
+              simple to use website and really informant , contains accurate
+              fact and statistics.
             </p>
             <div className="client-avatar">
               <img
@@ -327,7 +376,8 @@ const Homepage = () => {
               </div>
             </div>
             <p>
-              Im happy with the services offered by the chatbot really resourcfull in helping me find my way around the website.
+              Im happy with the services offered by the chatbot really
+              resourcfull in helping me find my way around the website.
             </p>
           </div>
         </div>
