@@ -12,7 +12,7 @@ import MarketAdd from "./Add/MarketAdd";
 const Market = () => {
   const [marketAddOpen, setMarketAddOpen] = useState(false);
   let storageData = JSON.parse(localStorage.getItem("marketData"));
-  console.log(storageData);
+  // console.log(storageData);
   let data = [];
   if (storageData) {
     data.push(...marketData, ...storageData);
