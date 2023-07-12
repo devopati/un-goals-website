@@ -60,7 +60,7 @@ const MarketAdd = ({ marketAddOpen, setMarketAddOpen, data }) => {
     time: getTime(),
     price: "",
     image: getImage(),
-    likeCount: 0,
+    likeCount: 1,
     title: "",
     description: "",
   });
