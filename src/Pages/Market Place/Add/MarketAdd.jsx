@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { selectName } from "../../../Redux/Features/Auth/authSlice";
 import { toast } from "react-toastify";
 
-const MarketAdd = ({ marketAddOpen, setMarketAddOpen, data }) => {
+const MarketAdd = ({ setMarketAddOpen }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const date = new Date();
