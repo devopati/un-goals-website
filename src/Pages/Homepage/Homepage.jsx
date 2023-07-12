@@ -10,7 +10,7 @@ import {
 import { AiFillStar, AiTwotonePhone } from "react-icons/ai";
 import { TfiEmail } from "react-icons/tfi";
 // import "bootstrap-icons";
-import recycle from "../../assets/images/food_waste3.jpg";
+import recycle from "../../assets/images/takataka.jpg";
 import icon1 from "../../assets/images/icon1.png";
 import icon2 from "../../assets/images/icon2.png";
 import icon3 from "../../assets/images/icon3.png";
@@ -309,11 +309,11 @@ const Homepage = () => {
           </div>
           <div className="homepage-contacts-card contacts-card2">
             <h1>
-              Users' <span>testimonials</span>
+              <span>Users testimonials</span>
             </h1>
             <div className="client-avatar">
               <img
-                src="https://recycle.orionthemes.com/demo-1/wp-content/uploads/2016/12/teammember3-150x150.jpg"
+               /* src="https://recycle.orionthemes.com/demo-1/wp-content/uploads/2016/12/teammember3-150x150.jpg"*/
                 alt="profile picture"
               />
               <div>
@@ -326,7 +326,7 @@ const Homepage = () => {
             </p>
             <div className="client-avatar">
               <img
-                src="https://recycle.orionthemes.com/demo-1/wp-content/uploads/2016/11/teammember5-150x150.jpg"
+                src="C:/Users/User/Documents/GitHub/un-goals-website/src/assets/images/profileicon.png"
                 alt="profile picture"
               />
               <div>
