@@ -56,7 +56,7 @@ export const marketData = [
   {
     id: "yedhjsiudjsk52vdd58f52",
     name: "Princess Kim",
-    date: "11 August 2023",
+    date: "11 August 2022",
     time: "0600",
     price: 107,
     image:
