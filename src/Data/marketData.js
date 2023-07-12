@@ -1,7 +1,7 @@
 export const marketData = [
   {
     id: "hjegfjdh618752",
-    name: "David Oapti",
+    name: "Kingstone Kirui",
     date: "12 july 2023",
     time: "1200",
     price: 18,
