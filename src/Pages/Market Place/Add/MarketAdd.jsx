@@ -20,6 +20,8 @@ const MarketAdd = ({ setMarketAddOpen }) => {
   //   console.log(getName());
 
   const imgUrls = [
+   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT14AAz48mkYxTWkglZGfCVlnMmMf3l-qUOIg&usqp=CAU",
+    "https://c0.wallpaperflare.com/preview/521/810/544/compost-garbage-biological-waste.jpg",
     "https://images.unsplash.com/photo-1518736114810-3f3bedfec66a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFybSUyMHByb2R1Y2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
     "https://plus.unsplash.com/premium_photo-1661876193320-7060e330c9b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZmFybSUyMHByb2R1Y2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
     "https://images.unsplash.com/photo-1471193945509-9ad0617afabf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZhcm0lMjBwcm9kdWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
