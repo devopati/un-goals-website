@@ -8,10 +8,9 @@ export const marketData = [
     image:
       "https://images.unsplash.com/photo-1606441171708-6534789d2d95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
     likecount: 148,
-    title: "Green Garbbage",
+    title: "Green Garbagge",
     description:
-      "Did you know carpet can be recycled?Used carpet is among the top ten materials in California landfills, with more than 350 million pounds discarded each year. However, petroleum-based carpet can be recycled into useful products, including new carpet, carpet padding,...",
-  },
+      "Did you know green garbage reduces disposal costs while also creating a valuable usable product",
   {
     id: "kjeg6f5875cklm",
     name: "Mish Ochieng'",
