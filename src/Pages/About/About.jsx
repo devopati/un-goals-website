@@ -20,7 +20,7 @@ const About = () => {
               of disposing of green waste,the website wil act as the hub for the knowledge and also the meeting point 
               for the community (marketplace ).we also plan to bring in companies dealing with green waste recycling 
               This will connect the people with the green waste to the companies hence creating a marketplace where we can sustainably 
-              recycle green waste.
+              recycle green waste.</p>
           </div>
         </div>
         <div className="about-top-image">

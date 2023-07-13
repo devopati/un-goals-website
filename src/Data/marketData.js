@@ -11,7 +11,7 @@ export const marketData = [
     title: "Green Garbagge",
     description:
       "Did you know green garbage reduces disposal costs while also creating a valuable usable product",
-  {
+  
     id: "kjeg6f5875cklm",
     name: "Mish Ochieng'",
     date: "23 june 2023",
