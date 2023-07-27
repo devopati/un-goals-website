@@ -16,19 +16,11 @@ const About = () => {
           </div>
           <div className="about-top-card">
             <p>
-              Garbage Dump Communities are, most simply put, the communities
-              that rely on the world’s garbage dumps to survive by either
-              working or living within them. The families that we work with
-              specifically make their living as “recyclers” or “pickers”,
-              combing through the garbage by hand and finding items to sell or
-              keep. Those who live here have to be incredibly resilient because
-              this way of life does not pay well: nearly all garbage dump
-              community members live on less than $2 a day, putting them below
-              the United Nation’s line for extreme poverty. Living in garbage
-              dump communities also has extreme adverse effects on both physical
-              and mental health, combined with extremely high barriers to access
-              to healthcare, education, proper food and shelter, and employment
-              opportunities outside the garbage dump.
+            we aim at reducing thee greenhouse gases released by educating the commmunity on sustainable methods 
+            of disposing of green waste,the website wil act as the hub for the knowledge and also the meeting point 
+            for the community (marketplace ).we also plan to bring in companies dealing with green waste recycling 
+            This will connect the people with the green waste to the companies hence creating a marketplace where we can sustainably 
+            recycle green waste.
             </p>
           </div>
         </div>
