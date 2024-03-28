@@ -153,7 +153,7 @@ const Homepage = () => {
               <h2>Hidden Consequences of Green Waste</h2>
               <div className="mid-paragraph">
                 <p>
-                  In today's world, where environmental concerns are paramount,
+                  In todays world, where environmental concerns are paramount,
                   the management of green waste plays a crucial role in
                   achieving sustainable development. Green waste refers to
                   organic waste derived from plants, including food scraps, yard
