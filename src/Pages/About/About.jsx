@@ -16,20 +16,12 @@ const About = () => {
           </div>
           <div className="about-top-card">
             <p>
-<<<<<<< HEAD
-              we aim at reducing thee greenhouse gases released by educating the commmunity on sustainable methods 
-              of disposing of green waste,the website wil act as the hub for the knowledge and also the meeting point 
-              for the community (marketplace ).we also plan to bring in companies dealing with green waste recycling 
-              This will connect the people with the green waste to the companies hence creating a marketplace where we can sustainably 
-              recycle green waste.</p>
-=======
             we aim at reducing thee greenhouse gases released by educating the commmunity on sustainable methods 
             of disposing of green waste,the website wil act as the hub for the knowledge and also the meeting point 
             for the community (marketplace ).we also plan to bring in companies dealing with green waste recycling 
             This will connect the people with the green waste to the companies hence creating a marketplace where we can sustainably 
             recycle green waste.
             </p>
->>>>>>> 5d863a035c51932f842eba968e8e202d25559e12
           </div>
         </div>
         <div className="about-top-image">
