@@ -36,7 +36,7 @@ const MarketCard = ({
         </div>
         <div className="mc-description">
           <h3>
-            {title} <span>${price}</span>
+            {title} <span>Ksh {price}</span>
           </h3>
           <div className="mc-desc-p">
             <p>{description}</p>

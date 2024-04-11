@@ -7,6 +7,7 @@ import {
   FaLinkedin,
   FaTwitter,
   FaYoutube,
+  FaShoppingCart
 } from "react-icons/fa";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { VscChromeClose } from "react-icons/vsc";
@@ -19,7 +20,15 @@ import {
   selectName,
 } from "../../Redux/Features/Auth/authSlice";
 import { toast } from "react-toastify";
+import Cart from "../Crat/Cart";
+
 const Header = ({ configHead }) => {
+  const defaultMarketData = [
+      { id: 1, title: 'Product 1', price: 10, quantity: 2, image: "https://www.nature-and-garden.com/wp-content/uploads/sites/4/2023/06/chicken-manure-fertilizer.jpg" },
+      { id: 2, title: 'Product 2', price: 20, quantity: 1, image: "https://www.nature-and-garden.com/wp-content/uploads/sites/4/2023/06/chicken-manure-fertilizer.jpg" },
+      { id: 3, title: 'Product 3', price: 15, quantity: 3, image: "https://www.nature-and-garden.com/wp-content/uploads/sites/4/2023/06/chicken-manure-fertilizer.jpg" }
+  ];
+
   const dispatch = useDispatch();
 
   const [menuActive, setMenuActive] = useState(false);
@@ -59,6 +68,7 @@ const Header = ({ configHead }) => {
         <FaInstagram id="socials" />
         <FaLinkedin id="socials" />
         <FaYoutube id="socials" />
+        <FaShoppingCart id="socials" />
       </div>
       <div
         className={`header-menu-container ${configHead} ${
@@ -104,6 +114,8 @@ const Header = ({ configHead }) => {
             </div>
           )}
         </div>
+      <Cart marketData={defaultMarketData} />
+
         <div className="small-menu" onClick={() => setMenuActive(!menuActive)}>
           {menuActive ? <VscChromeClose /> : <HiOutlineMenuAlt3 />}
         </div>

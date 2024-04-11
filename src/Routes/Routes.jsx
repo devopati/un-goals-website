@@ -9,6 +9,9 @@ import Login from "../Pages/Login/Login";
 import Market from "../Pages/Market Place/Market";
 import About from "../Pages/About/About";
 import MarketAdd from "../Pages/Market Place/Add/MarketAdd";
+import NewPage from "../Pages/Market Place/Add/NewPage";
+import Admin from "../Pages/Admin/Admin";
+import { AddProduct } from "../Pages/Admin/AddProduct";
 
 const WebRoutes = () => {
   return (
@@ -23,6 +26,9 @@ const WebRoutes = () => {
           <Route path="/market" element={<Market />} />
           <Route path="/addmarket" element={<MarketAdd />} />
           <Route path="/about" element={<About />} />
+          <Route path="/newpage" element={<NewPage />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin/addproduct" element={<AddProduct />} />
         </Routes>
       </BrowserRouter>
     </>

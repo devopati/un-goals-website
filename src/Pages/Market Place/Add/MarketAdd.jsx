@@ -3,6 +3,7 @@ import { MdArrowBack } from "react-icons/md";
 import { useSelector } from "react-redux";
 import { selectName } from "../../../Redux/Features/Auth/authSlice";
 import { toast } from "react-toastify";
+import product_list from "./productData"; // Importing product_list from productData.js
 
 const MarketAdd = ({ setMarketAddOpen }) => {
   const [isLoading, setIsLoading] = useState(false);
@@ -74,25 +75,34 @@ const MarketAdd = ({ setMarketAddOpen }) => {
   };
 
   const handleSubmit = async (e) => {
-    let mData = [];
     e.preventDefault();
     setIsLoading(true);
-    // localStorage.removeItem("marketData");
-    let currData = JSON.parse(localStorage.getItem("marketData"));
-    if (currData) {
-      await mData.push(formData);
-      mData.push(currData);
-      await localStorage.setItem("marketData", JSON.stringify(mData));
-    } else {
-      mData.push(formData);
-      localStorage.setItem("marketData", JSON.stringify(mData));
-    }
+   
+    // Retrieve existing data from localStorage
+    let currData = JSON.parse(localStorage.getItem("marketData")) || [];
+   
+    // Append new data to the existing data
+    currData.push(formData);
+   
+    // Store the updated data back into localStorage
+    await localStorage.setItem("marketData", JSON.stringify(currData));
+   
     setTimeout(() => {
-      toast.success("Posted Successfully");
-      setIsLoading(false);
-      setMarketAddOpen(false);
+       toast.success("Posted Successfully");
+       setIsLoading(false);
+       setMarketAddOpen(false);
     }, 3000);
-  };
+   };
+
+  const handleSelectProduct = (price, description, title) => {
+    setFormData(prevState => ({
+      ...prevState,
+      price,
+      description,
+      title
+   }));
+y  
+ };
 
   return (
     <div className="market-add-container">
@@ -104,13 +114,20 @@ const MarketAdd = ({ setMarketAddOpen }) => {
       </div>
       <div className="marketadd-form">
         <label htmlFor="title">Title</label>
+        <div className="option_card_container">
+          {product_list.map((product, index) => (
+            <Product_options key={product.product_name} product={product} onSelectProduct={handleSelectProduct} imgUrls={imgUrls[index]} />
+          ))}
+        </div>
+
         <input
-          type="title"
-          placeholder="Enter title"
-          name="title"
-          value={formData.title}
-          onChange={handleChange}
-        />
+            type="title"
+            placeholder="Enter title"
+            name="title"
+            value={formData.title}
+            onChange={handleChange}
+            style={{display: 'none'}}
+          />
 
         <div className="price">
           {" "}
@@ -144,3 +161,15 @@ const MarketAdd = ({ setMarketAddOpen }) => {
 };
 
 export default MarketAdd;
+
+const Product_options = ({ product, onSelectProduct, imgUrls }) => {
+  return (
+     <div onClick={() => onSelectProduct(product.price, product.description, product.product_name)} className="option_card">
+       <div key={product.product_name} className="option_cards">
+          <img src={imgUrls} alt="product" width={`100%`} height={`100px`} />
+         <h2>Product Name: {product.product_name}</h2>
+        
+       </div>
+     </div>
+  );
+ }; 

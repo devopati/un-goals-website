@@ -149,3 +149,24 @@
     width: 99%;
   }
 }
+
+.option_card_container{
+  display: flex;
+  gap: 30px;
+}
+
+.option_cards{
+  border: 1px solid gray;
+  padding: 10px;
+  width: 200px;
+  height: 240px;  
+  box-shadow: 2px 2px 2px 2px gray;
+  transition: 1s;
+  border-radius: 8px;
+}
+
+.option_cards:hover{
+  transform: scale(1.05);
+  background-color: white;
+  color: black;
+}
